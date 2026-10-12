@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy policy — Xubuntu Backup</title>
+  <style>body{max-width:48rem;margin:3rem auto;padding:0 1rem;font:1.1rem/1.6 system-ui,sans-serif;color:#202124}a{color:#174ea6}</style>
+</head>
+<body>
+  <main>
+    <h1>Privacy policy</h1>
+    <p>Application: Xubuntu Backup. Last updated: October 12, 2026.</p>
+    <h2>Purpose and access</h2>
+    <p>This workflow is intended only for its owner's personal backups. The owner authorizes Rclone to access Google Drive using the <code>https://www.googleapis.com/auth/drive.file</code> scope. This allows access to files created by the app or explicitly made accessible to it, rather than general access to all Drive files. The workflow may also read Drive storage quota information to check available backup capacity.</p>
+    <h2>Backup data and credentials</h2>
+    <p>The owner chooses the local files to back up. Restic encrypts backup contents and repository metadata locally before upload. Google Drive receives the encrypted repository objects over HTTPS. The local Rclone configuration, including OAuth credentials and tokens, is protected with a separate configuration password. Credentials are not published on this website or stored in its source repository.</p>
+    <p>Encryption does not hide all information from the storage provider: Google can observe the account, encrypted object names and sizes, storage usage, and access timing.</p>
+    <h2>Use and sharing</h2>
+    <p>Google account access is used to store, inspect, and restore the owner's encrypted backups. Backup data and Google user data are not sold, used for advertising, used to train AI models, or shared with other users. Google processes the uploaded encrypted objects and account activity under its own policies.</p>
+    <h2>Retention, deletion, and revocation</h2>
+    <p>The owner controls retention and deletion of backup snapshots and repository files. Access can be revoked through the Google Account's third-party connections settings. Revoking access prevents subsequent authorized operations but does not delete existing backup files. The owner can separately remove those files from Google Drive and remove local credentials.</p>
+    <h2>This website</h2>
+    <p>These static pages contain no login forms, analytics scripts, or application cookies and do not receive backup files. GitHub Pages hosts the website and may process ordinary request information under GitHub's privacy policy.</p>
+    <h2>Contact</h2>
+    <p>Questions about this personal workflow can be directed to its operator using the support email displayed on the Google OAuth consent screen.</p>
+    <p><a href="index.html">Xubuntu Backup home</a></p>
+  </main>
+</body>
+</html>
